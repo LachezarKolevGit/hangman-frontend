@@ -79,7 +79,9 @@ button:focus-visible {
 
 .container {
   margin: 0;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: 100%;
@@ -90,12 +92,80 @@ button:focus-visible {
   grid-column: 1 / span 3;
   grid-row: 1 / 2;
 }
-.page-footer {
+.Footer {
+  background-color: #2f4f4f;
+  display: flex;
   grid-column: 1 / span 3;
   grid-row: 3 / 4;
+  height: 150px;
+  justify-content: space-evenly;
 }
 
 .content {
-  grid-column: 1 / span 3;
-  grid-row: 2 / 3;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  margin-left: 16%;
+  margin-right: 16%;
+  justify-content: space-between;
+}
+
+.Navbar-company-data {
+  align-items: center;
+  display: flex;
+  margin-left: 2%;
+}
+
+.Navbar-company_data_logo {
+  height: 50px;
+  width: 50px;
+}
+
+.Navbar-company_data_logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.Header {
+  background-color: #2f4f4f;
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+}
+
+.AnnouncementBlock {
+  background-color: #1e90ff;
+  flex: 1;
+  text-align: center;
+}
+
+.Navbar {
+  align-items: center;
+  display: flex;
+  flex: 4;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Navbar-company-data {
+}
+
+.Navbar-company-data_name {
+  color: #1e90ff;
+  font-family: Righteous;
+  font-size: 24px;
+}
+
+.RankList {
+  border: thick solid;
+  border-color: #1e90ff;
+  /* border-top-color: red;
+  border-left-color: blue;
+  border-right-color: green;
+  border-bottom-color: gold; */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 1em;
+  flex: 1;
 }

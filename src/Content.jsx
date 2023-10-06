@@ -3,6 +3,7 @@ function Content() {
   return (
     <div className="content">
       <RankList />
+      <RankList />
     </div>
   );
 }

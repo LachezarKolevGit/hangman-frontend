@@ -1,10 +1,15 @@
+import PlayerData from "./PlayerData";
+
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="logo"></div>
-      <img src="endGame.jpg" alt="Company logo" />
-      <div className="company-name">Hangman</div>
-      <div></div>
+    <nav className="Navbar">
+      <div className="Navbar-company-data">
+        <div className="Navbar-company_data_logo">
+          <img src="endGame.jpg" alt="Company logo" />
+        </div>
+        <div className="Navbar-company-data_name">Hangman</div>
+      </div>
+      <PlayerData />
     </nav>
   );
 }
